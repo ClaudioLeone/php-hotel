@@ -49,6 +49,14 @@
 </head>
 
 <body>
-    <h1>TEST</h1>
+    <h1>HOTELS</h1>
+
+    <div class="container">
+        <?php foreach ($hotels as $hotel) {
+            foreach ($hotel as $key => $value) {
+                echo $key . ': ' . $value . ' ';
+            }
+        }?>
+    </div>
 </body>
 </html>

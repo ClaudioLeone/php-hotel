@@ -54,8 +54,9 @@
     <div class="container">
         <?php foreach ($hotels as $hotel) {
             foreach ($hotel as $key => $value) {
-                echo $key . ': ' . $value . ' ';
+                echo "<h3>$key: </h3><span>$value</span>";
             }
+            echo "<hr>";
         }?>
     </div>
 </body>

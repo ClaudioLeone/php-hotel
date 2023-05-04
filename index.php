@@ -53,12 +53,23 @@
     <h1 class="h1">HOTELS</h1>
 
     <div class="container">
-        <?php foreach ($hotels as $hotel) {
+        <!-- <?php foreach ($hotels as $hotel) {
             foreach ($hotel as $key => $value) {
                 echo "<h3>$key: </h3><span>$value</span>";
             }
             echo "<hr>";
-        }?>
+        }?> -->
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <?php foreach ($hotels as $hotel) { ?>
+                        <?php } foreach ($hotel as $key => $value) { ?>
+                            <th scope="col"><?php echo $key ?></th>
+                    <?php } ?>
+                </tr>
+            </thead>
+        </table>
     </div>
 </body>
 </html>

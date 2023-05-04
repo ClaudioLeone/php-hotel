@@ -69,6 +69,16 @@
                     <?php } ?>
                 </tr>
             </thead>
+
+            <tbody>
+                <?php foreach ($hotels as $hotel) { ?>
+                    <tr>
+                        <?php foreach ($hotel as $key => $value) { ?>
+                            <td><?php echo $value ?></td>
+                        <?php } ?>
+                    </tr>
+                <?php } ?>
+            </tbody>
         </table>
     </div>
 </body>
